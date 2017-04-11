@@ -10,7 +10,7 @@ pagination:
 use:
     - gettingstartedpages
 permalink: docs/guides/getting-started/user-dashboard/
-nexturl: getting-started/create-site
+nexturl: getting-started/create-site/
 nextpage: Create New Site
 previousurl: getting-started
 previouspage: Introduction
@@ -22,7 +22,7 @@ In this lesson, we’re going to explore the User Dashboard and add information 
 
 <div class="alert alert-info">
 <h4 class="info">Note</h4>
-<p>If you registered as an agency, and this is your first time logging in, you’ll land on your Organization Dashboard. Navigate to your User Dashboard by selecting your name in the menu bar, then **My Dashboard**.
+<p>If you registered as an agency, and this is your first time logging in, you’ll land on your Organization Dashboard. Navigate to your User Dashboard by selecting your name in the menu bar, then <strong>My Dashboard</strong>.
 </p></div>
 
 2. Navigate to the **Account** tab, and update your Profile by adding your Company / Organization and Job Function. Select **Update Profile** to save this information.
