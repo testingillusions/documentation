@@ -29,17 +29,20 @@ The best solution is to communicate with the maintainer of the module or plugin 
 
     The command above moves the directory to a folder named backups in your home directory. `~/`. Replace this with an existing backup location.
 
-4. Create a symlink for the standard files path:
+4. Create a symlink for the standard files path (./wp-content/uploads):
 
     ```bash
     # The first path will be used as the new file destination instead of whatever path the plugin assumed write access to
-    ln -s ./wp-content/uploads/new-directory ./wp-content/path/plugin-expects-to-write-to
+    #
+    # 
+    cd ./wp_content/plugins/plugin-directory
+    ln -s ../../uploads/new-directory plugin-expects-to-write-to
     ```
 
     <div class="alert alert-info">
     <h4 class="info">Note</h4>
     <p markdown="1">
-    The `ln` command is sensitive to the **working directory**, the folder your prompt is currently sitting in. The example above assumes you're in the main directory of your local git repository.
+    The `ln` command is sensitive to the **working directory**, the folder your prompt is currently sitting in. The example above assumes you're in the root of your local git repository. You need to add ".." to get to the ./wp-content level of the directory structure. 
     </p>
     </div>
 
